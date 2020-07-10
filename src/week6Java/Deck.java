@@ -28,19 +28,18 @@ public class Deck {
 	}
 	//Constructor
 	public Deck() {
-		for(int i = 0; i<suit.length; i++) {
+		for(int i = 0; i < suit.length; i++) {
 			for(int j = 2; j < 15; j++) {
 				String tempName = switchName(j) +" of "+ suit[i];
 				cards.add(new Card(tempName, j));
 				}
 			}
-		
 		}
 
 	public void shuffle() {
 		Collections.shuffle(cards);
 		//for(Card key : cards)
-			//System.out.println("list: "+ key.getName());
+		//System.out.println("list: "+ key.getName());
 	}
 	
 	public Card draw() {

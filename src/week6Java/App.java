@@ -34,7 +34,7 @@ public static void main(String[] args) {
 	for(int i=0; i<26; i++) {
 		Card player1Card = player1.flip();
 		Card player2Card = player2.flip();
-System.out.println(player1.getName() + "'s: "+player1Card.getName().toUpperCase()+ " vs " + player2.getName()+"'s: "+player2Card.getName());
+		System.out.println(player1.getName() + "'s: "+player1Card.getName().toUpperCase()+ " vs " + player2.getName()+"'s: "+player2Card.getName());
 
 		if (player1Card.getValue() > player2Card.getValue() ) {
 			player1.incrementScore();
@@ -56,8 +56,6 @@ System.out.println(player1.getName() + "'s: "+player1Card.getName().toUpperCase(
 	}else {
 		System.out.println("FINAL TALLY: " + player1.getName() + " score: " + player1.getScore() + ", "+ player2.getName()+" score: "+ player2.getScore());
 	}
-
-
 	}
 
 }

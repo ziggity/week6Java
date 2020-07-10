@@ -28,10 +28,10 @@ public class Player {
 		this.score = score;
 	}
 	public void describe() {
-		//System.out.println(name + " has these cards: ");
-		//for(Card aCardInHand : hand) {
-		//	aCardInHand.describe();
-		//}
+		System.out.println(name + " has these cards: ");
+		for(Card aCardInHand : hand) {
+			aCardInHand.describe();
+		}
 	}
 	
 	public Card flip() {
